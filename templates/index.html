@@ -48,7 +48,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="banner-img">
-                                    <img src="{% static 'images/home-bg-1-img.png'%}" alt="banner-img" />
+                                    <img src="{% static 'images/char.png'%}" alt="banner-img" />
                                 </div>
                             </div>
                         </div>
@@ -88,24 +88,26 @@
                 </div>
 
                 <div class="row">
+                    {% for temp in cou %}
                     <div class="col-lg-4 col-sm-6">
                         <div class="single-service">
                             <div class="service-img">
-                                <img src="{% static 'images/service/s1.png'%}" alt="service" />
+                                <img src="{{ temp.img_main.url }}" alt="service" />
                             </div>
 
                             <div class="service-content">
-                                <h3>Visual Design</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel sit maxime assumenda. maiores, magnam</p>
+                                <h3>{{ temp.title }}</h3>
+                                <p>{{ temp.brief | truncatechars:100 }}</p>
                                 
-                                <a href="{% url 'solutionsdetails'%}" class="line-bnt">
+                                <a href="{% url 'solutionsdetails' temp.course_id %}" class="line-bnt">
                                     Read More
                                 </a>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
 
-                    <div class="col-lg-4 col-sm-6">
+                    <!-- <div class="col-lg-4 col-sm-6">
                         <div class="single-service">
                             <div class="service-img">
                                 <img src="{% static 'images/service/s2.png'%}" alt="service" />
@@ -188,7 +190,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -939,7 +941,8 @@
 
                     <div class="col-lg-6 col-md-6">
                         <div class="content">
-                            <form id="contactForm">
+                            <form method="POST" action="https://formspree.io/f/mgednqvb">
+                                {% csrf_token %}
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12">
                                         <div class="form-group">

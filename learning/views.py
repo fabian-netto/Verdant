@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from blog.models import *
 
 def index(request):
-    return render(request, 'index.html')
+    cou = Course.objects.all()
+    context = {'cou':cou}
+    return render(request, 'index.html', context)
+

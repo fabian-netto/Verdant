@@ -435,7 +435,7 @@ Go Top Style*/
 /** Box Btn Css **/
 .box-btn {
   font-size: 16px;
-  color: #ffffff;
+  color: #188DB4;
   padding: 15px 25px;
   line-height: 1;
   -webkit-transition: all 0.5s;
@@ -443,12 +443,12 @@ Go Top Style*/
   text-transform: capitalize;
   position: relative;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 35px;
   text-align: center;
   overflow: hidden;
   z-index: 1;
-  background-color: #1d42d9;
-  border: 1px solid #1d42d9;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .box-btn::before {
@@ -663,11 +663,11 @@ Header Area Css
   top: 2px;
   margin-right: 5px;
   font-size: 16px;
-  color: #3d59fa;
+  color: #188DB4;
 }
 
 .header-area .header-content-right .header-contact li a:hover {
-  color: #1d42d9;
+  color: #188DB4;
 }
 
 .header-area .header-content-right .header-contact li:last-child {
@@ -679,7 +679,7 @@ Header Area Css
   width: 1px;
   height: 24px;
   content: "";
-  background: #1d42d9;
+  background: #188DB4;
   right: -40px;
   top: 2px;
 }
@@ -698,11 +698,11 @@ Header Area Css
 
 .header-area .header-content-right .header-social li a {
   font-size: 16px;
-  color: #1d42d9;
+  color: #188DB4;
 }
 
 .header-area .header-content-right .header-social li a:hover {
-  color: #3d59fa;
+  color: #188DB4;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
@@ -715,7 +715,7 @@ Header Area Css
 header-2 Area Css
 ======================================================*/
 .header-2 {
-  background: #3d59fa;
+  background: #188DB4;
 }
 
 .header-2.three {
@@ -974,11 +974,11 @@ Navbar Area Css
 }
 
 .navbar-area .box-btn::before, .navbar-area .box-btn::after {
-  background: #fff;
+  background: #188DB4;
 }
 
 .navbar-area .box-btn:hover {
-  color: #132460;
+  color: #ffffff;
 }
 
 .navbar-area .nav-btn {
@@ -1062,7 +1062,7 @@ Navbar Area Css
   transition: 0.3s;
   -webkit-box-shadow: 0 1px 10px rgba(221, 221, 221, 0.2);
           box-shadow: 0 1px 10px rgba(221, 221, 221, 0.2);
-  background: #051242 !important;
+  background: #011926 !important;
 }
 
 /*
@@ -1070,7 +1070,7 @@ Banner Area Css
 ======================================================*/
 .banner-area {
   position: relative;
-  background: url(../images/home-bg-2.png);
+  background: url(../images/main-banner.png);
   background-size: cover;
   overflow: hidden;
   width: 100%;

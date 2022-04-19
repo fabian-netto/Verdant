@@ -71,7 +71,7 @@
                         <a href="{% url 'blogdetails' temp.blog_id %}">
                             <h3>{{ temp.title }}</h3>
                         </a>
-                        <p>{{ temp.brief }}</p>
+                        <p>{{ temp.brief | truncatechars:100}}</p>
                         
                         <a href="{% url 'blogdetails' temp.blog_id %}" class="line-bnt">Read More</a>
                     </div>

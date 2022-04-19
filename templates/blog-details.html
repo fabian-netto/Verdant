@@ -46,7 +46,7 @@
             <div class="col-lg-8 col-md-12">
                 <div class="blog-details-desc">
                     <div class="article-image">
-                        <img src="{{ temp.img_main.url }}" alt="image">
+                        <img src="{{ pr.img_main.url }}" alt="image">
                     </div>
 
                     <div class="article-content">
@@ -57,34 +57,34 @@
                             </ul>
                         </div>
 
-                        <h3>{{ temp.title }}</h3>
+                        <h3>{{ pr.title }}</h3>
 
-                        <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit, consectetur qui ratione voluptatem sequi nesciunt magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non.</p>
+                        <p>{{ pr.brief }}</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat labore et dolore magna aliqua.</p>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat labore et dolore magna aliqua.</p> -->
 
                         <blockquote class="flaticon-quote">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid praesentium eveniet illum asperiores, quidem, ipsum voluptatum numquam ducimus nisi exercitationem dolorum facilis Repellendus aliquid praesentium eveniet illum asperiores.</p>
                         </blockquote>
                         
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat consectetur adipisicing onsectetur adipisicing.</p>
+                        <p>{{ pr.description }}</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat ullamco laboris nisi ut aliquip ex.</p>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat ullamco laboris nisi ut aliquip ex.</p> -->
 
                         <div class="row mb-3">
                             <div class="col-lg-4 col-sm-6 mt-4">
                                 <div class="b-d-s-img">
-                                    <img src="{% static 'images/blog/4.jpg'%}" alt="Image">
+                                    <img src="{{ pr.img_1.url }}" alt="Image">
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 mt-4">
                                 <div class="b-d-s-img">
-                                    <img src="{% static 'images/blog/5.jpg'%}" alt="Image">
+                                    <img src="{{ pr.img_2.url }}" alt="Image">
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0 mt-4">
                                 <div class="b-d-s-img">
-                                    <img src="{% static 'images/blog/6.jpg'%}" alt="Image">
+                                    <img src="{{ pr.img_3.url }}" alt="Image">
                                 </div>
                             </div>
                         </div>

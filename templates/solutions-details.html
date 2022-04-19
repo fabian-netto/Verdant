@@ -45,32 +45,32 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="services-img mb">
-                    <img src="{% static 'images/solutions-details/1.png'%}" alt="Image">
+                    <img src="{{ cou.img_main.url }}" alt="Image">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="services-item-wrap owl-carousel owl-theme">
                     <div class="services-item">
-                        <img src="{% static 'images/solutions-details/2.png'%}" alt="Image">
+                        <img src="{{ cou.img_3.url }}" alt="Image">
                     </div>
                     <div class="services-item">
-                        <img src="{% static 'images/solutions-details/3.png'%}" alt="Image">
+                        <img src="{{ cou.img_1.url }}" alt="Image">
                     </div>
                     <div class="services-item">
-                        <img src="{% static 'images/solutions-details/4.png'%}" alt="Image">
+                        <img src="{{ cou.img_2.url }}" alt="Image">
                     </div>
                 </div>
             </div>
             
             <div class="col-12">
                 <div class="services-details-text">
-                    <h2>IT Management</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  not only five centuries, but also the leap into.</p>
+                    <h2>{{ cou.title }}</h2>
+                    <p>{{ cou.brief }}</p>
 
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a dictionary of over 200 Latin words, combined with a</p>
+                    <p>{{ cou.description }}</p>
 
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc generators on the Internet tend to repeat predefined chunks as necessary, making this the first generator dictionary of over 200 Latin words, combined with a.</p>
-                    
+                    <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc generators on the Internet tend to repeat predefined chunks as necessary, making this the first generator dictionary of over 200 Latin words, combined with a.</p>
+                     -->
                 </div>
             </div>
         </div>
@@ -79,13 +79,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-4">
                     <div class="services-img mb-qc">
-                        <img src="{% static 'images/solutions-details/5.png'%}" alt="Image">
+                        <img src="{{ cou.img_3.url }}" alt="Image">
                     </div>
                 </div>
 
                 <div class="col-lg-8">
-                    <h3>QA Testing</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition necessary, making this the first as necessary, making this</p>
+                    <h3>{{ cou.title_1 }}</h3>
+                    <p>{{ cou.brief_1 }}</p>
                 </div>
             </div>
         </div>
