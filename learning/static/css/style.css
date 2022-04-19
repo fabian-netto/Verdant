@@ -418,7 +418,7 @@ Go Top Style*/
 }
 
 .section-title span {
-  color: #1d42d9;
+  color: #188DB4;
   font-size: 14px;
   position: relative;
   display: inline-block;
@@ -448,8 +448,27 @@ Go Top Style*/
   overflow: hidden;
   z-index: 1;
   background-color: #ffffff;
+  border: 1px solid #188DB4;
+}
+
+.box-btn-details{
+  font-size: 16px;
+  color: #eef4f7;
+  padding: 15px 25px;
+  line-height: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+  border-radius: 35px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #188DB4;
   border: 1px solid #ffffff;
 }
+
 
 .box-btn::before {
   content: "";
@@ -1450,7 +1469,7 @@ Service Area Css
 }
 
 .single-service .service-content h3 {
-  color: #051242;
+  color: #188DB4;
   margin-bottom: 5px;
 }
 
@@ -1465,7 +1484,7 @@ Service Area Css
   left: 100%;
   width: 100%;
   height: 100%;
-  background-color: #051242;
+  background-color: #024156;
   z-index: -1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1523,7 +1542,7 @@ Home Company Area Css
 }
 
 .home-company-area .company-content .company-tittle span {
-  color: #1d42d9;
+  color: #188DB4;
   font-size: 14px;
   margin-bottom: 8px;
   display: inline-block;
@@ -1548,7 +1567,7 @@ Home Company Area Css
   content: "";
   width: 350px;
   height: 100px;
-  background: #e6335a;
+  background: #188DB4;
   z-index: -1;
   left: -30px;
   top: -30px;
@@ -1560,7 +1579,7 @@ Home Company Area Css
   content: "";
   width: 350px;
   height: 100px;
-  background: #051242;
+  background: #000000c4;
   z-index: -1;
   right: -30px;
   bottom: -30px;
@@ -1613,7 +1632,7 @@ Choose Area Css
 }
 
 .choose-area .choose-content .faq-accordion .accordion .accordion-item .accordion-title.active {
-  background-color: #051242;
+  background-color: #011926;
   color: #ffffff;
 }
 
