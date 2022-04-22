@@ -9,5 +9,6 @@ urlpatterns = [
     path('contact/',views.contact,name='contact'), 
     path('news',views.news,name='news'), 
     path('register',views.register,name='register'), 
-    path('solutionsdetails/<str:pk>/',views.solutionsdetails,name='solutionsdetails'),    
+    path('solutionsdetails/<str:pk>/',views.solutionsdetails,name='solutionsdetails'),
+    # path('quick/<str:pk>/',views.quick,name='quick'),    
 ]

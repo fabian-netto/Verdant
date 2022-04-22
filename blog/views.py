@@ -11,7 +11,8 @@ def about(request):
 
 def blogdetails(request,pk):
     pr = Blog.objects.get(blog_id=pk)
-    context = {'pr':pr}
+    pb = Blog.objects.all()
+    context = {'pr':pr,'pb':pb}
     return render(request, 'blog-details.html', context) 
 
 def contact(request):
@@ -48,3 +49,8 @@ def register(request):
             return HttpResponse('registration incomplte')
     else:
         return render(request,'index.html')    
+
+def quick(request,pk):
+    co = Course.objects.all()
+    context = {'co':co}
+    return render(request, 'footer.html' ,context)

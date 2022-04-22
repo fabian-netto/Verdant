@@ -52,8 +52,8 @@
                     <div class="article-content">
                         <div class="entry-meta">
                             <ul>
-                                <li><span>Posted On:</span> <a href="#">May 19, 2020</a></li>
-                                <li><span>Posted By:</span> <a href="#">John Anderson</a></li>
+                                <li><span>Posted On:</span> <a href="#">{{ pr.date }}</a></li>
+                                <!-- <li><span>Posted By:</span> <a href="#">John Anderson</a></li> -->
                             </ul>
                         </div>
 
@@ -64,7 +64,8 @@
                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat labore et dolore magna aliqua.</p> -->
 
                         <blockquote class="flaticon-quote">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid praesentium eveniet illum asperiores, quidem, ipsum voluptatum numquam ducimus nisi exercitationem dolorum facilis Repellendus aliquid praesentium eveniet illum asperiores.</p>
+                            <p>Dreams is not what you see in sleep</p>
+                            <p>Dreams is the thing which doesn't let you sleep</p>
                         </blockquote>
                         
                         <p>{{ pr.description }}</p>
@@ -261,7 +262,7 @@
 
             <div class="col-lg-4 col-md-12">
                 <aside class="widget-area" id="secondary">
-                    <div class="widget widget_search">
+                    <!-- <div class="widget widget_search">
                         <h3 class="widget-title">Search Now</h3>
                         <div class="post-wrap">
                             <form class="search-form">
@@ -272,8 +273,32 @@
                                 <button type="submit"><i class='bx bx-search'></i></button>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
 
+                    <section class="widget widget-peru-posts-thumb">
+                        <h3 class="widget-title">Popular Blogs</h3>
+                        <div class="post-wrap">
+                            {% for tem in pb %}
+                            <article class="item">
+                                <a href="{% url 'blogdetails' tem.blog_id %}" class="thumb">
+                                    <span class="fullimage cover bg1 fimg" role="img">
+                                        <img class="bt-img img-fluid" src="{{ tem.img_main.url }}" alt="">
+                                    </span>
+                                </a>
+                                <div class="info">
+                                    <time datetime="2020-06-30">{{ tem.date}}</time>
+                                    <h4 class="title usmall">
+                                        <a href="blog-details.html">
+                                            {{ tem.title}}
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div class="clear"></div>
+                            </article>
+                            {% endfor %}
+                        </div>
+                    </section>
                     
                 </aside>
             </div>

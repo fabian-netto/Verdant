@@ -477,7 +477,7 @@ Go Top Style*/
   left: 100%;
   width: 100%;
   height: 50%;
-  background-color: #051242;
+  background-color: #011926;
   z-index: -1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -490,7 +490,7 @@ Go Top Style*/
   right: 100%;
   width: 100%;
   height: 50%;
-  background-color: #051242;
+  background-color: #011926;
   z-index: -1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -2115,8 +2115,8 @@ Team Area Css
   width: 100%;
   height: 0;
   bottom: -50px;
-  background: #051242;
-  opacity: 0.95;
+  background: #011926;
+  /* opacity: 0.95; */
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: -1;
@@ -2153,7 +2153,7 @@ Team Area Css
 }
 
 .home-team-area .owl-dots button.owl-dot.active {
-  background: #3d59fa;
+  background: #04749f;
 }
 
 /*
@@ -2293,8 +2293,8 @@ Blog Area Css
 .home-blog-area .single-blog::after {
   position: absolute;
   content: "";
-  background: #051242;
-  opacity: 0.8;
+  background: #011926;
+  /* opacity: 0.8; */
   bottom: 0;
   left: 100%;
   right: 0;
@@ -2347,7 +2347,7 @@ Blog Area Css
 }
 
 .home-blog-area .blog-btn p a {
-  color: #3d59fa;
+  color: #04749f;
   text-decoration: underline;
 }
 
@@ -3532,7 +3532,7 @@ Blog Details Area Style
 
 .blog-details-area .blog-details-desc .article-content .entry-meta ul li span {
   display: inline-block;
-  color: #1d42d9;
+  color: #04749f;
   font-weight: 500;
 }
 
@@ -3620,7 +3620,7 @@ Blog Details Area Style
 
 .blog-details-area .blog-details-desc .article-footer .article-tags span {
   display: inline-block;
-  color: #1d42d9;
+  color: #04749f;
   font-size: 20px;
   margin-right: 5px;
   position: relative;
@@ -3669,7 +3669,7 @@ Blog Details Area Style
   height: 32px;
   line-height: 33px;
   border-radius: 50%;
-  background-color: #1d42d9;
+  background-color: #04749f;
   text-align: center;
   font-size: 14px;
 }
@@ -3709,7 +3709,7 @@ Blog Details Area Style
 }
 
 .blog-details-area blockquote::before {
-  color: #1d42d9;
+  color: #04749f;
   content: "\ee34";
   position: absolute;
   left: 50px;
@@ -3728,7 +3728,7 @@ Blog Details Area Style
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #1d42d9;
+  background-color: #04749f;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -4217,9 +4217,9 @@ Blog Details Area Style
   position: relative;
   font-size: 20px;
   margin-bottom: 0;
-  background-color: #ececec;
+  background-color: #011926;
   padding: 10px 20px;
-  color: #293a5c;
+  color: #ececec;
   position: relative;
 }
 
@@ -4230,7 +4230,7 @@ Blog Details Area Style
   left: 0;
   width: 2px;
   height: 100%;
-  background-color: #1d42d9;
+  background-color: #04749f;
 }
 
 .blog-details-area .widget-area .widget_search form {
@@ -4307,7 +4307,16 @@ Blog Details Area Style
   width: 80px;
   margin-right: 15px;
 }
+.fimg {
+  object-fit:contain;
+  overflow: hidden;
 
+}
+.bt-img{
+  width:100%;
+  height:100%;
+
+}
 .blog-details-area .widget-area .widget-peru-posts-thumb .item .thumb .fullimage {
   width: 80px;
   height: 80px;
@@ -4316,7 +4325,7 @@ Blog Details Area Style
   background-repeat: no-repeat;
   background-position: center center !important;
   position: relative;
-  background-color: #293a5c;
+  background-color: #ffffff;
 }
 
 .blog-details-area .widget-area .widget-peru-posts-thumb .item .thumb .fullimage.bg1 {
@@ -5293,7 +5302,7 @@ Contact Area Css
 }
 
 .home-2-contact .contact-img {
-  background: url(../images/contact-img2.jpg);
+  background: url(../images/contact.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -5526,7 +5535,7 @@ Footer Area Css
 .footer-area .content h3::after {
   position: absolute;
   content: '';
-  background: #051242;
+  background: #011925;
   width: 7px;
   height: 7px;
   left: -15px;
@@ -5825,7 +5834,7 @@ Pagenavigation Area Css
 }
 
 .page-navigation-area .page-link {
-  background-color: #1d42d9;
+  background-color: #04749f;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   width: 40px;
@@ -5875,7 +5884,7 @@ Pagenavigation Area Css
 .page-navigation-area .page-item.active .page-link {
   z-index: 1;
   color: #ffffff;
-  background-color: #051242;
+  background-color: #011926;
 }
 
 /*
