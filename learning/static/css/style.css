@@ -1945,7 +1945,7 @@ Home Case Area Css
 }
 
 .home-case .case-list .single-case:hover h3 {
-  color: #1d42d9;
+  color: #04749f;
 }
 
 /*
@@ -2075,7 +2075,7 @@ Team Area Css
   text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #1d42d9;
+  color: #04749f;
   transition: 0.3s;
 }
 
@@ -2084,7 +2084,7 @@ Team Area Css
 }
 
 .home-team-area .single-team .team-img .social li a:hover {
-  background: #1d42d9;
+  background: #04749f;
   color: #ffffff;
 }
 
@@ -2204,7 +2204,7 @@ Client Area Css
   top: -30px;
   left: 0;
   right: 0;
-  border: 1px solid #1d42d9;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   margin: auto;
 }
@@ -6171,7 +6171,7 @@ Services Details Area Style
   width: 30px;
   height: 30px;
   line-height: 38px;
-  background-color: #1d42d9;
+  background-color: #04749f;
   color: #ffffff;
   border-radius: 50%;
   text-align: center;

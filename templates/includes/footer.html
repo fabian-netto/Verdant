@@ -44,12 +44,13 @@
                 <div class="content ml-15">
                     <h3>Courses We Offer</h3>
                     <ul class="footer-list">
-                        <li><a href="#">Visual Design</a></li>
-                        <li><a href="#"> Development</a></li>
-                        <li><a href="#">QA & Testing</a></li>
-                        <li><a href="#">IT Management</a></li>
-                        <li><a href="#">Cyber Security</a></li>
-                        <li><a href="#">Wireless Connection</a></li>
+                        <li><a href="{% url 'coursedetails'%}">React</a></li>
+                        <li><a href="{% url 'coursedetails'%}">Java</a></li>
+                        <li><a href="{% url 'coursedetails'%}">PHP</a></li>
+                        <li><a href="{% url 'coursedetails'%}">Angular</a></li>
+                        <li><a href="{% url 'coursedetails'%}">Data Science</a></li>
+                        <li><a href="{% url 'coursedetails'%}">Node js</a></li>
+                        <li><a href="{% url 'coursedetails'%}">Ui/Ux</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,12 +58,12 @@
                 <div class="content">
                     <h3>Quick Links</h3>
                     <ul class="footer-list">
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="solutions.html">Service</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="privecy.html">Privacy & Policy</a></li>
-                        <li><a href="terms-condition.html">Terms & Conditions</a></li>
-                        <li><a href="#">Data Analysis</a></li>
+                        <!-- <li><a href="faq.html">FAQ</a></li> -->
+                        <li><a href="{% url 'coursedetails'%}">Service</a></li>
+                        <!-- <li><a href="#">Career</a></li> -->
+                        <li><a href="{% url 'privacy'%}">Privacy & Policy</a></li>
+                        <!-- <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                        <li><a href="#">Data Analysis</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -88,7 +89,7 @@
                         <li><a href="{% url 'index'%}">Home</a></li>
                         <li><a href="{% url 'about'%}">About</a></li>
                         <li><a href="{% url 'blog'%}">Blog</a></li>
-                        <li><a href="{% url 'news'%}">News</a></li>
+                        <!-- <li><a href="{% url 'news'%}">News</a></li> -->
                         <li><a href="{% url 'contact'%}">Contact</a></li>
                     </ul>
                 </div>

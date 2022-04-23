@@ -50,7 +50,10 @@ def register(request):
     else:
         return render(request,'index.html')    
 
-def quick(request,pk):
-    co = Course.objects.all()
-    context = {'co':co}
-    return render(request, 'footer.html' ,context)
+def privacy(request):
+    return render(request, 'privacy.html')
+
+def coursedetails(request):
+    cor = Course.objects.all()
+    context = {'cor':cor}
+    return render(request, 'course-details.html',context)  

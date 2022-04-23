@@ -7,8 +7,11 @@ urlpatterns = [
     path('blog/',views.blog,name='blog'), 
     path('blogdetails/<str:pk>/',views.blogdetails,name='blogdetails'),
     path('contact/',views.contact,name='contact'), 
-    path('news',views.news,name='news'), 
+    path('news/',views.news,name='news'), 
     path('register',views.register,name='register'), 
     path('solutionsdetails/<str:pk>/',views.solutionsdetails,name='solutionsdetails'),
-    # path('quick/<str:pk>/',views.quick,name='quick'),    
+    # path('quick/<str:pk>/',views.quick,name='quick'),   
+    path('coursedetails/',views.coursedetails,name='coursedetails'),  
+
+    path('privacy/',views.privacy,name='privacy'),
 ]
