@@ -29,9 +29,12 @@ SECRET_KEY = 'django-insecure-reh(!1cqk!68o9o8q@5kshf*joij3-y3%h=4n3ajd&#zohz)a@
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '0.0.0.0'
-    'verdantweb.herokuapp.com',
-    '127.0.0.1'
+    '*',
+   'http://verdantweb.herokuapp.com/',
+   'https://verdantweb.herokuapp.com/',
+   'verdantweb.herokuapp.com',
+   'verdantweb.herokuapp.com/',
+   '127.0.0.1',
 ]
 
 
