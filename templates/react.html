@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="page-title-area page-title-area1">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Course Details</h2>
+            <ul>
+                <li>
+                    <a href="{% url 'index'%}">
+                        Home 
+                    </a>
+                </li>
+
+                <!-- <li>Solutions</li> -->
+
+                <li class="active">Course Details</li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-shape">
+        <div class="shape1">
+            <img src="{% static 'images/shape/1.png'%}" alt="shape" />
+        </div>
+        <div class="shape3">
+            <img src="{% static 'images/shape/3.png'%}" alt="shape" />
+        </div>
+        <div class="shape4">
+            <img src="{% static 'images/shape/4.png'%}" alt="shape" />
+        </div>
+        <div class="shape5">
+            <img src="{% static 'images/shape/5.png'%}" alt="shape" />
+        </div>
+        <div class="shape6">
+            <img src="{% static 'images/shape/6.png'%}" alt="shape" />
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Services Details Area -->
+<!-- Start Services Details Area -->
+<section class="services-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="services-img mb">
+                    <img src="{% static 'images/vd-about-1.jpg'%}" alt="Image">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="services-details-text">
+                    <h2>React</h2>
+                    <p>We’ll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.  Here, ShoppingList is a React component class, or React component type. A component takes in parameters, called props (short for “properties”), and returns a hierarchy of views to display via the render method.  The render method returns a description of what you want to see on the screen. React takes the description and displays the result. In particular, render returns a React element, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write. The div syntax is transformed at build time to React.createElement('div').</p>
+
+                    <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a dictionary of over 200 Latin words, combined with a</p>
+
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc generators on the Internet tend to repeat predefined chunks as necessary, making this the first generator dictionary of over 200 Latin words, combined with a.</p>
+                     -->
+                </div>
+            </div>
+        </div>
+
+        <div class="scrives-item-2 mt-4 ">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="services-img mb-qc">
+                        <img src="{% static 'images/icons/react.png'%}" alt="Image">
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <h3>React Tutorial</h3>
+                    <p>We’ll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you’re coming from a different programming language.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="scrives-item-3 mt-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="social">
+                        <ul class="social-link">
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-pinterest-alt"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="share">
+                        <a href="#">
+                            <i class="bx bx-share-alt"></i>
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+{% endblock %}

@@ -88,77 +88,59 @@
                 </div>
 
                 <div class="row">
-                    {% for temp in cou|slice:":3" %}
+                    
                     <div class="col-lg-4 col-sm-6">
                         <div class="single-service">
                             <div class="service-img">
-                                <img src="{{ temp.img_main.url }}" alt="service" />
+                                <img src="{% static 'images/icons/react.png'%}" alt="service" />
                             </div>
 
                             <div class="service-content">
-                                <h3>{{ temp.title }}</h3>
-                                <p>{{ temp.brief | truncatechars:100 }}</p>
+                                <h3>React</h3>
+                                <p>We recommend that you check out the tic-tac-toe game before continuing with the tutorial. One of the features that you’ll notice is that there is a numbered list to the right of the game’s board</p>
                                 
-                                <a href="{% url 'solutionsdetails' temp.course_id %}" class="line-bnt">
+                                <a href="{% url 'react'%}" class="line-bnt">
                                     Read More
                                 </a>
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-service">
+                            <div class="service-img">
+                                <img src="{% static 'images/icons/java.png'%}" alt="service" />
+                            </div>
+
+                            <div class="service-content">
+                                <h3>Java</h3>
+                                <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+
+                                <a href="{% url 'java'%}" class="line-bnt">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-service">
+                            <div class="service-img">
+                                <img src="{% static 'images/icons/angular.png'%}" alt="service" />
+                            </div>
+
+                            <div class="service-content">
+                                <h3>Angular</h3>
+                                <p>Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces ...</p>
+                            
+                                <a href="{% url 'angular'%}" class="line-bnt">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- <div class="col-lg-4 col-sm-6">
-                        <div class="single-service">
-                            <div class="service-img">
-                                <img src="{% static 'images/service/s2.png'%}" alt="service" />
-                            </div>
-
-                            <div class="service-content">
-                                <h3>Development</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel sit maxime assumenda. maiores, magnam</p>
-                            
-                                <a href="solutions-details.html" class="line-bnt">
-                                    Read More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="single-service">
-                            <div class="service-img">
-                                <img src="{% static 'images/service/s3.png'%}" alt="service" />
-                            </div>
-
-                            <div class="service-content">
-                                <h3>QA Testing</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel sit maxime assumenda. maiores, magnam</p>
-
-                                <a href="solutions-details.html" class="line-bnt">
-                                    Read More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="single-service">
-                            <div class="service-img">
-                                <img src="{% static 'images/service/s4.png'%}" alt="service" />
-                            </div>
-
-                            <div class="service-content">
-                                <h3>IT Management</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel sit maxime assumenda. maiores, magnam</p>
-                            
-                                <a href="solutions-details.html" class="line-bnt">
-                                    Read More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6">
                         <div class="single-service">
                             <div class="service-img">
                                 <img src="{% static 'images/service/s5.png'%}" alt="service" />
@@ -190,7 +172,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>  -->
                 </div>
             </div>
         </section>
@@ -864,60 +846,60 @@
                 </div>
 
                 <div class="row">
-                    {% for temp in blo|slice:":3" %}
+                   
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog">
                             <div class="blog-img">
-                                <a href="{% url 'blogdetails' temp.blog_id %}">
-                                    <img src="{{ temp.img_main.url}}" alt="blog">
+                                <a href="{% url 'quantum' %}">
+                                    <img src="{% static 'images/vblog/Quantum1.jpg'%}" alt="blog">
                                 </a>
                             </div>
 
                             <div class="content">
                                 <ul>
                                     <li>
-                                        10 April 2020
+                                        27 April 2022
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="#">By Admin</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                                 
-                                <a href="{% url 'blogdetails' temp.blog_id %}">
-                                    <h3>{{ temp.title }}</h3>
+                                <a href="{% url 'quantum' %}">
+                                    <h3>Quantum Computing</h3>
                                 </a>
-                                <p>{{ temp.brief | truncatechars:100 }}</p>
+                                <p>Quantum computing is a type of computation that harnesses the collective properties of quantum states, such as superposition, interference, and entanglement, to perform calculations.</p>
                                 
-                                <a href="{% url 'blogdetails' temp.blog_id %}" class="line-bnt">Read More</a>
+                                <a href="{% url 'quantum'%}" class="line-bnt">Read More</a>
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
-                    <!-- <div class="col-lg-4 col-md-6">
+                    
+                    <div class="col-lg-4 col-md-6">
                         <div class="single-blog">
                             <div class="blog-img">
-                                <a href="blog-details.html">
-                                    <img src="{% static 'images/blog/5.jpg'%}" alt="blog">
+                                <a href="{% url 'ai' %}">
+                                    <img src="{% static 'images/vblog/ai_main.jpg'%}" alt="blog">
                                 </a>
                             </div>
 
                             <div class="content">
                                 <ul>
                                     <li>
-                                        10 April 2020
+                                        27 April 2022
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="#">By Admin</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
 
-                                <a href="blog-details.html">
-                                    <h3>Temperature App UX Studies & Development Case</h3>
+                                <a href="{% url 'ai' %}">
+                                    <h3>Artificial Intelligence (AI) and Machine Learning</h3>
                                 </a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas in fugit minima modi perspiciatis nam aspernatur porro</p>
+                                <p>What is artificial intelligence (AI)? Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems.</p>
 
-                                <a href="blog-details.html" class="line-bnt">Read More</a>
+                                <a href="{% url 'ai' %}" class="line-bnt">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -925,30 +907,30 @@
                     <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
                         <div class="single-blog">
                             <div class="blog-img">
-                                <a href="blog-details.html">
-                                    <img src="{% static 'images/blog/3.jpg'%}" alt="blog">
+                                <a href="{% url 'edge' %}">
+                                    <img src="{% static 'images/vblog/Edge-main.jpg'%}" alt="blog">
                                 </a>
                             </div>
 
                             <div class="content">
                                 <ul>
                                     <li>
-                                        10 April 2020
+                                        27 April 2022
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="#">By Admin</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
 
-                                <a href="blog-details.html">
-                                    <h3>IT Software Company Development Case</h3>
+                                <a href="{% url 'edge' %}">
+                                    <h3>Edge Computing</h3>
                                 </a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas in fugit minima modi perspiciatis nam aspernatur porro</p>
+                                <p>Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data. This is expected to improve response times and save bandwidth.</p>
 
-                                <a href="blog-details.html" class="line-bnt">Read More</a>
+                                <a href="{% url 'edge' %}" class="line-bnt">Read More</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="blog-btn text-center">
                     <p>We Have More Usefull Blogs For You. <a href="{% url 'blog'%}">View More</a></p>

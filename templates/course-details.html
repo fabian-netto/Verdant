@@ -57,44 +57,44 @@
         </div> -->
 
         <div class="row case-list">
-            {% for temp in cor %}
+            
             <div class="col-lg-4 col-sm-6 item cyber">
                 <div class="single-case">
                     <div class="case-img">
-                        <a href="{% url 'solutionsdetails' temp.course_id %}">
-                            <img src=" {{ temp.img_main.url }}" alt="case"/>
+                        <a href="{% url 'react'%}">
+                            <img src="{% static 'images/icons/react.png'%}" alt="case"/>
                         </a>
                     </div>
 
                     <div class="content">
-                        <a href="{% url 'solutionsdetails' temp.course_id %}">
-                            <h3>{{ temp.title}}</h3>
+                        <a href="{% url 'react'%}">
+                            <h3>React</h3>
                         </a>
-                        <p>{{ temp.brief | truncatechars:100 }}</p>
+                        <p>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.</p>
 
-                        <a href="{% url 'solutionsdetails' temp.course_id %}" class="line-bnt">
+                        <a href="{% url 'react'%}" class="line-bnt">
                             View Project Details
                         </a>
                     </div>
                 </div>
             </div>
-            {% endfor %}
+           
 
-            <!-- <div class="col-lg-4 col-sm-6 item dev design">
+            <div class="col-lg-4 col-sm-6 item dev design">
                 <div class="single-case">
                     <div class="case-img">
-                        <a href="case-details.html">
-                            <img src="assets/images/case/c2.jpg" alt="case"/>
+                        <a href="{% url 'java'%}">
+                            <img src="{% static 'images/icons/java.png'%}" alt="case"/>
                         </a>
                     </div>
 
                     <div class="content">
-                        <a href="case-details.html">
-                            <h3>Ride Share App UX Studies & Development Case</h3>
+                        <a href="{% url 'java'%}">
+                            <h3>Java</h3>
                         </a>
-                        <p>Lorem ipsum dolor sit amet, coloni is to nsectetur adipiscing elit, sed do eiudvi smod tempor incididunt ipsum dolor.</p>
+                        <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
 
-                        <a href="case-details.html" class="line-bnt">
+                        <a href="{% url 'java'%}" class="line-bnt">
                             View Project Details
                         </a>
                     </div>
@@ -104,25 +104,25 @@
             <div class="col-lg-4 col-sm-6 item dev">
                 <div class="single-case">
                     <div class="case-img">
-                        <a href="case-details.html">
-                            <img src="assets/images/case/c3.jpg" alt="case"/>
+                        <a href="{% url 'angular'%}">
+                            <img src="{% static 'images/icons/angular.png'%}" alt="case"/>
                         </a>
                     </div>
 
                     <div class="content">
-                        <a href="case-details.html">
-                            <h3>Restaurant Management & Web Developing</h3>
+                        <a href="{% url 'angular'%}">
+                            <h3>Angular</h3>
                         </a>
-                        <p>Lorem ipsum dolor sit amet, coloni is to nsectetur adipiscing elit, sed do eiudvi smod tempor incididunt ipsum dolor.</p>
+                        <p>Angular is a TypeScript-based free and open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.</p>
 
-                        <a href="case-details.html" class="line-bnt">
+                        <a href="{% url 'angular'%}" class="line-bnt">
                             View Project Details
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-sm-6 item dev cyber">
+            <!-- <div class="col-lg-4 col-sm-6 item dev cyber">
                 <div class="single-case">
                     <div class="case-img">
                         <a href="case-details.html">
@@ -141,9 +141,9 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-lg-4 col-sm-6 item dev design">
+            <!-- <div class="col-lg-4 col-sm-6 item dev design">
                 <div class="single-case">
                     <div class="case-img">
                         <a href="case-details.html">
@@ -182,7 +182,7 @@
                             View Project Details
                         </a>
                     </div>
-                </div> -->
+                </div> --> -->
             <!-- </div> -->
         </div>
 

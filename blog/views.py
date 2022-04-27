@@ -53,6 +53,24 @@ def register(request):
 def privacy(request):
     return render(request, 'privacy.html')
 
+def react(request):
+    return render(request, 'react.html') 
+
+def java(request):
+    return render(request, 'java.html')  
+
+def angular(request):
+    return render(request, 'angular.html')  
+
+def quantum(request):
+    return render(request, 'quantum.html')    
+
+def ai(request):
+    return render(request, 'ai.html') 
+
+def edge(request):
+    return render(request, 'edge.html')                       
+
 def coursedetails(request):
     cor = Course.objects.all()
     context = {'cor':cor}

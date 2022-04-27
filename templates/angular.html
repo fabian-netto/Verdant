@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="page-title-area page-title-area1">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Course Details</h2>
+            <ul>
+                <li>
+                    <a href="{% url 'index'%}">
+                        Home 
+                    </a>
+                </li>
+
+                <!-- <li>Solutions</li> -->
+
+                <li class="active">Course Details</li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-shape">
+        <div class="shape1">
+            <img src="{% static 'images/shape/1.png'%}" alt="shape" />
+        </div>
+        <div class="shape3">
+            <img src="{% static 'images/shape/3.png'%}" alt="shape" />
+        </div>
+        <div class="shape4">
+            <img src="{% static 'images/shape/4.png'%}" alt="shape" />
+        </div>
+        <div class="shape5">
+            <img src="{% static 'images/shape/5.png'%}" alt="shape" />
+        </div>
+        <div class="shape6">
+            <img src="{% static 'images/shape/6.png'%}" alt="shape" />
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Services Details Area -->
+<!-- Start Services Details Area -->
+<section class="services-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="services-img mb">
+                    <img src="{% static 'images/vd-about-1.jpg'%}" alt="Image">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="services-details-text">
+                    <h2>Angular</h2>
+                    <p>This topic can help you understand Angular: what Angular is, what advantages it provides, and what you might expect as you start to build your applications.  Angular is a development platform, built on TypeScript. As a platform, Angular includes:  A component-based framework for building scalable web applications A collection of well-integrated libraries that cover a wide variety of features, including routing, forms management, client-server communication, and more A suite of developer tools to help you develop, build, test, and update your code With Angular, you're taking advantage of a platform that can scale from single-developer projects to enterprise-level applications. Angular is designed to make updating as straightforward as possible, so take advantage of the latest developments with a minimum of effort. Best of all, the Angular ecosystem consists of a diverse group of over 1.7 million developers, library authors, and content creators.  See the live example / download example for a working example containing the code snippets in this guide.</p>
+
+                    <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a dictionary of over 200 Latin words, combined with a</p>
+
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc generators on the Internet tend to repeat predefined chunks as necessary, making this the first generator dictionary of over 200 Latin words, combined with a.</p>
+                     -->
+                </div>
+            </div>
+        </div>
+
+        <div class="scrives-item-2 mt-4 ">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="services-img mb-qc">
+                        <img src="{% static 'images/icons/angular.png'%}" alt="Image">
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <h3>Front end development</h3>
+                    <p>These Angular docs help you learn and use the Angular framework and development platform, from your first application to optimizing complex single-page apps for enterprises.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="scrives-item-3 mt-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="social">
+                        <ul class="social-link">
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-pinterest-alt"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="share">
+                        <a href="#">
+                            <i class="bx bx-share-alt"></i>
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+{% endblock %}

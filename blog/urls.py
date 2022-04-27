@@ -14,4 +14,12 @@ urlpatterns = [
     path('coursedetails/',views.coursedetails,name='coursedetails'),  
 
     path('privacy/',views.privacy,name='privacy'),
+
+    path('react/',views.react,name='react'),
+    path('java/',views.java,name='java'),
+    path('angular/',views.angular,name='angular'),
+
+    path('quantum/',views.quantum,name='quantum'),
+    path('ai/',views.ai,name='ai'),
+    path('edge/',views.edge,name='edge'),
 ]

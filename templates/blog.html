@@ -13,7 +13,7 @@
                     </a>
                 </li>
 
-                <li>Blog</li>
+                <!-- <li>Blog</li> -->
 
                 <li class="active">Blog</li>
             </ul>
@@ -45,40 +45,94 @@
         <div class="section-title">
             <span>Blog Post</span>
             <h2>Our Regular Blogs</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis vel consequatur tempora atque blanditiis exercitationem incidunt, alias corporis quam assumenda dicta.</p>
+            <p>Connectivity, minterization and integrated software application along with artificial intelligence, machine learning and data science has brought not only speed and accuracy, but has started playing a vital role in each and every human activity.</p>
         </div>
 
         <div class="row">
-            {% for temp in pro %}
+            
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog">
                     <div class="blog-img">
-                        <a href="{% url 'blogdetails' temp.blog_id %}">
-                            <img src="{{ temp.img_main.url }}" alt="blog">
+                        <a href="{% url 'quantum' %}">
+                            <img src="{% static 'images/vblog/Quantum1.jpg'%}" alt="blog">
                         </a>
                     </div>
 
                     <div class="content">
                         <ul>
                             <li>
-                                {{ temp.date }}
+                                27 April 2022
                             </li>
                             <!-- <li>
                                 <a href="#">By Admin</a>
                             </li> -->
                         </ul>
                         
-                        <a href="{% url 'blogdetails' temp.blog_id %}">
-                            <h3>{{ temp.title }}</h3>
+                        <a href="{% url 'quantum' %}">
+                            <h3>Quantum Computing</h3>
                         </a>
-                        <p>{{ temp.brief | truncatechars:100}}</p>
+                        <p>Quantum computing is a type of computation that harnesses the collective properties of quantum states, such as superposition, interference, and entanglement, to perform calculations.</p>
                         
-                        <a href="{% url 'blogdetails' temp.blog_id %}" class="line-bnt">Read More</a>
+                        <a href="{% url 'quantum' %}" class="line-bnt">Read More</a>
                     </div>
                 </div>
             </div>
-            {% endfor %}
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog">
+                    <div class="blog-img">
+                        <a href="{% url 'ai' %}">
+                            <img src="{% static 'images/vblog/ai_main.jpg'%}" alt="blog">
+                        </a>
+                    </div>
 
+                    <div class="content">
+                        <ul>
+                            <li>
+                                27 April 2022
+                            </li>
+                            <!-- <li>
+                                <a href="#">By Admin</a>
+                            </li> -->
+                        </ul>
+                        
+                        <a href="{% url 'ai' %}">
+                            <h3>Artificial Intelligence (AI) and Machine Learning</h3>
+                        </a>
+                        <p>What is artificial intelligence (AI)? Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems.</p>
+                        
+                        <a href="{% url 'ai' %}" class="line-bnt">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog">
+                    <div class="blog-img">
+                        <a href="{% url 'edge' %}">
+                            <img src="{% static 'images/vblog/Edge-main.jpg'%}" alt="blog">
+                        </a>
+                    </div>
+
+                    <div class="content">
+                        <ul>
+                            <li>
+                                27 April 2022
+                            </li>
+                            <!-- <li>
+                                <a href="#">By Admin</a>
+                            </li> -->
+                        </ul>
+                        
+                        <a href="{% url 'edge' %}">
+                            <h3>Edge Computing</h3>
+                        </a>
+                        <p>Edge computing is a distributed computing paradigm that brings computation and data storage closer to the sources of data. This is expected to improve response times and save bandwidth.</p>
+                        
+                        <a href="{% url 'edge' %}" class="line-bnt">Read More</a>
+                    </div>
+                </div>
+            </div>
             <!-- <div class="col-lg-4 col-md-6">
                 <div class="single-blog">
                     <div class="blog-img">
